@@ -7,7 +7,7 @@ from pca import PCA
 
 class Analyzer:
   __crops = []
-  __featrue = PCA(2)
+  __featrue = PCA(10)
 
   def __init__(self):
     self.__load_crops()
