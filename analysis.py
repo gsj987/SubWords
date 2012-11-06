@@ -1,4 +1,3 @@
-import numpy as nm
 import Image
 from scipy.spatial.distance import euclidean
 from parse import crop_and_perprocessing
