@@ -1,3 +1,5 @@
+@import url("animation.css");
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -17,6 +19,7 @@ html {
   position: relative;
   display: block;
 }
+
 
 #container{
   width: 960px;
@@ -72,6 +75,34 @@ html {
   z-index: 1;
 }
 
+#uploader.active .drop-border.left {
+-webkit-animation: moveup 0.6s linear infinite;
+-moz-animation: moveup 0.6s linear infinite;
+-ms-animation: moveup 0.6s linear infinite;
+-o-animation: moveup 0.6s linear infinite;
+animation: moveup 0.6s linear infinite
+}
+#uploader.active .drop-border.top {
+-webkit-animation: moveright 0.6s linear infinite;
+-moz-animation: moveright 0.6s linear infinite;
+-ms-animation: moveright 0.6s linear infinite;
+-o-animation: moveright 0.6s linear infinite;
+animation: moveright 0.6s linear infinite
+}
+#uploader.active .drop-border.right {
+-webkit-animation: movedown 0.6s linear infinite;
+-moz-animation: movedown 0.6s linear infinite;
+-ms-animation: movedown 0.6s linear infinite;
+-o-animation: movedown 0.6s linear infinite;
+animation: movedown 0.6s linear infinite
+}
+#uploader.active .drop-border.bottom {
+-webkit-animation: moveleft 0.6s linear infinite;
+-moz-animation: moveleft 0.6s linear infinite;
+-ms-animation: moveleft 0.6s linear infinite;
+-o-animation: moveleft 0.6s linear infinite;
+animation: moveleft 0.6s linear infinite
+}
 
 #uploader .click-to-upload {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
